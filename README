@@ -1,0 +1,26 @@
+pcienema
+--------
+Locates and identifies all PCI devices on a system.
+
+To run, you will probably need superuser (e.g. root) permissions, if you get an
+error, try rocking some 'sudo':  `sudo pcienema'
+
+
+Why?
+----
+Because I wanted to.
+
+
+Doesn't lspci (aka pciutils) do the same thing?
+-----------------------------------------------
+Yep, and lspci does a whole lot more.  pcienema performs a brute-force scan and
+queries all potential PCI devices for their configuration information (just the
+vendor/device register).  This tool does not rely on the /proc or /sys (sysfs)
+filesystems for locating devices.  This tool uses "Configuration Method #1" to
+scan the PCI configuration space.
+
+
+Contact
+-------
+Matt Davis (enferex)
+mattdavis9@gmail.com
