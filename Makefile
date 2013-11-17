@@ -1,4 +1,4 @@
-CFLAGS = -g3 -std=c99 -pedantic
+CFLAGS = -g3 -Wall -std=c99 -pedantic
 APP = pcienema
 
 $(APP): main.c
